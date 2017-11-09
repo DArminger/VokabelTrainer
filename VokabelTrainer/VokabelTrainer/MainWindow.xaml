@@ -23,8 +23,9 @@
         <ListBox x:Name="listBoxCategories" HorizontalAlignment="Stretch" VerticalAlignment="Top" Grid.Column="0" Grid.Row="3" Grid.RowSpan="2"/>
         <Menu x:Name="menu" HorizontalAlignment="Stretch"  VerticalAlignment="Top" Grid.Row="0" Grid.ColumnSpan="3">
             <MenuItem Header="Menu">
-                <MenuItem Name="Import" Header="Import Words"/>
-                <MenuItem Name="Exit" Header="Exit"/>
+                <MenuItem Header="Import Words"/>
+                <MenuItem Header="Create new category"/>
+                <MenuItem Header="Exit"/>
 
             </MenuItem>
         </Menu>
