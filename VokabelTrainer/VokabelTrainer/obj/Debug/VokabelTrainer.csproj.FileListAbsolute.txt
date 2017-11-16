@@ -39,3 +39,10 @@ C:\Users\lukhe\Documents\GitHub\VokabelTrainer\VokabelTrainer\VokabelTrainer\bin
 C:\Users\lukhe\Documents\GitHub\VokabelTrainer\VokabelTrainer\VokabelTrainer\bin\Debug\DB_lib.dll.config
 C:\Users\lukhe\Documents\GitHub\VokabelTrainer\VokabelTrainer\VokabelTrainer\bin\Debug\EntityFramework.xml
 C:\Users\lukhe\Documents\GitHub\VokabelTrainer\VokabelTrainer\VokabelTrainer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\David A\Desktop\HTL Grieskirchen\5.Klasse\SYP\VokabelTrainer\VokabelTrainer\VokabelTrainer\bin\Debug\DB_lib.dll
+C:\Users\David A\Desktop\HTL Grieskirchen\5.Klasse\SYP\VokabelTrainer\VokabelTrainer\VokabelTrainer\bin\Debug\EntityFramework.dll
+C:\Users\David A\Desktop\HTL Grieskirchen\5.Klasse\SYP\VokabelTrainer\VokabelTrainer\VokabelTrainer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\David A\Desktop\HTL Grieskirchen\5.Klasse\SYP\VokabelTrainer\VokabelTrainer\VokabelTrainer\bin\Debug\DB_lib.pdb
+C:\Users\David A\Desktop\HTL Grieskirchen\5.Klasse\SYP\VokabelTrainer\VokabelTrainer\VokabelTrainer\bin\Debug\DB_lib.dll.config
+C:\Users\David A\Desktop\HTL Grieskirchen\5.Klasse\SYP\VokabelTrainer\VokabelTrainer\VokabelTrainer\bin\Debug\EntityFramework.xml
+C:\Users\David A\Desktop\HTL Grieskirchen\5.Klasse\SYP\VokabelTrainer\VokabelTrainer\VokabelTrainer\bin\Debug\EntityFramework.SqlServer.xml
