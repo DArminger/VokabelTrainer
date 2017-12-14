@@ -61,7 +61,6 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="test.cs" />
     <Compile Include="Wordstrainer.xaml.cs">
       <DependentUpon>Wordstrainer.xaml</DependentUpon>
     </Compile>
