@@ -46,3 +46,5 @@ C:\Users\David A\Desktop\HTL Grieskirchen\5.Klasse\SYP\VokabelTrainer\VokabelTra
 C:\Users\David A\Desktop\HTL Grieskirchen\5.Klasse\SYP\VokabelTrainer\VokabelTrainer\VokabelTrainer\bin\Debug\DB_lib.dll.config
 C:\Users\David A\Desktop\HTL Grieskirchen\5.Klasse\SYP\VokabelTrainer\VokabelTrainer\VokabelTrainer\bin\Debug\EntityFramework.xml
 C:\Users\David A\Desktop\HTL Grieskirchen\5.Klasse\SYP\VokabelTrainer\VokabelTrainer\VokabelTrainer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\David A\Desktop\HTL Grieskirchen\5.Klasse\SYP\VokabelTrainer\VokabelTrainer\VokabelTrainer\bin\Debug\MVVMLibrary.dll
+C:\Users\David A\Desktop\HTL Grieskirchen\5.Klasse\SYP\VokabelTrainer\VokabelTrainer\VokabelTrainer\bin\Debug\MVVMLibrary.pdb

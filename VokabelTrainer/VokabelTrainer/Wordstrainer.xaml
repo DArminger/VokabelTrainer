@@ -6,6 +6,7 @@
         xmlns:local="clr-namespace:VokabelTrainer"
         mc:Ignorable="d"
         Title="Wordstrainer" Height="300" Width="300">
+    
     <Grid Background="LightGray">
         <Grid.RowDefinitions>
             <RowDefinition Height="*"></RowDefinition>
@@ -21,15 +22,15 @@
             <ColumnDefinition Width="*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
 
-        <TextBox x:Name="textBoxTranslation" Background="White" HorizontalAlignment="Stretch" Text="GermanTranslation" VerticalAlignment="Stretch" VerticalContentAlignment="Center" Grid.Row="2" Grid.ColumnSpan="3"/>
-        <Label x:Name="labelStartVocab" Content="English" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Row="1" VerticalContentAlignment="Center" Grid.ColumnSpan="3"/>
-        <Label x:Name="labelTranslationFromTo" Content="English - German" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" VerticalContentAlignment="Center" Grid.ColumnSpan="3"/>
-        <Label x:Name="labelQuestionsSolved" Content="16/75" HorizontalAlignment="Right" VerticalAlignment="Stretch" Grid.Row="5" Grid.Column="2"/>
-        <Button x:Name="buttonSkip" Content="Skip" Background="WhiteSmoke" BorderThickness="2" BorderBrush="Black" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Row="3" Grid.Column="0"/>
-        <Button x:Name="buttonShow" Content="Show" Background="WhiteSmoke" BorderThickness="2" BorderBrush="Black" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" Grid.Row="3" Grid.Column="1"/>
-        <Button x:Name="buttonCheck" Content="Check" Background="WhiteSmoke" BorderThickness="2" BorderBrush="Black" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Row="3" Grid.Column="2"/>
-        <Image x:Name="imageStatus" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Column="1" Grid.Row="4"/>
-        <Button x:Name="buttonCancel" Content="Cancel Training" Background="WhiteSmoke" BorderThickness="2" BorderBrush="Black" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Row="5" Grid.Column="0"/>
+        <TextBox Background="White" Text="{Binding TranslatedWord, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" VerticalContentAlignment="Center" Grid.Row="2" Grid.ColumnSpan="3"/>
+        <Label Content="{Binding UntranslatedWord, UpdateSourceTrigger=PropertyChanged}"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Row="1" VerticalContentAlignment="Center" Grid.ColumnSpan="3"/>
+        <Label Content="{Binding TranslationFromTo, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" VerticalContentAlignment="Center" Grid.ColumnSpan="3"/>
+        <Label Content="{Binding AmountOfWord, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Right" VerticalAlignment="Stretch" Grid.Row="5" Grid.Column="2"/>
+        <Button Command="{Binding Skip, Mode=OneWay}"  Content="Skip" Background="WhiteSmoke" BorderThickness="2" BorderBrush="Black" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Row="3" Grid.Column="0"/>
+        <Button Command="{Binding Show, Mode=OneWay}" Content="Show" Background="WhiteSmoke" BorderThickness="2" BorderBrush="Black" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" Grid.Row="3" Grid.Column="1"/>
+        <Button Command="{Binding Check, Mode=OneWay}" Content="Check" Background="WhiteSmoke" BorderThickness="2" BorderBrush="Black" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Row="3" Grid.Column="2"/>
+        <Image Source="{Binding Image, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Column="1" Grid.Row="4"/>
+        <Button Command="{Binding Cancel, Mode=OneWay}" Content="Cancel Training" Background="WhiteSmoke" BorderThickness="2" BorderBrush="Black" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Row="5" Grid.Column="0"/>
 
     </Grid>
 </Window>

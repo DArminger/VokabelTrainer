@@ -1,8 +1,10 @@
 ﻿using DB_lib;
+using DB_lib.Entities;
 using DB_lib.Migrations;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,6 +17,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using VokabelTrainer.ViewModels;
 
 //Versionsverwaltung
 //v0.1 Project erstellt + Bildschirmmasken -David Arminger
@@ -35,13 +38,14 @@ namespace VokabelTrainer
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
 
-            var migration = new MigrateDatabaseToLatestVersion<WordsContext, Configuration>();
-            Database.SetInitializer(migration);
+            //var migration = new MigrateDatabaseToLatestVersion<WordsContext, Configuration>();
+            //Database.SetInitializer(migration);
 
             //DB Test
-            int test = words_db.Categories.Count();
-            Console.WriteLine("DB Test: " + test);
-
+            //int test = words_db.Categories.Count();
+            //Console.WriteLine("DB Test: " + test);
+            Wordstrainer seas = new Wordstrainer(words_db.Categories.ToList()[2], true);
+            seas.Show();
         }
 
 

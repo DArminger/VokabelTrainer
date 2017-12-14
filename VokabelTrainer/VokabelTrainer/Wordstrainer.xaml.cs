@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DB_lib.Entities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,6 +12,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using VokabelTrainer.ViewModels;
 
 namespace VokabelTrainer
 {
@@ -19,9 +21,10 @@ namespace VokabelTrainer
     /// </summary>
     public partial class Wordstrainer : Window
     {
-        public Wordstrainer()
+        public Wordstrainer(Category category, bool englishToGerman)
         {
             InitializeComponent();
+            this.DataContext = new TestViewModel(category, englishToGerman);
         }
     }
 }

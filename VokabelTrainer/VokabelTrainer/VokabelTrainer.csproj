@@ -61,6 +61,8 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="ViewModels\MainViewModel.cs" />
+    <Compile Include="ViewModels\TestViewModel.cs" />
     <Compile Include="Wordstrainer.xaml.cs">
       <DependentUpon>Wordstrainer.xaml</DependentUpon>
     </Compile>
@@ -113,6 +115,14 @@
       <Project>{479e7204-d82e-46ec-ad9c-e1d804dd7d37}</Project>
       <Name>DB_lib</Name>
     </ProjectReference>
+    <ProjectReference Include="..\MVVMLibrary\MVVMLibrary.csproj">
+      <Project>{a3f09e05-f942-4b63-bafa-0518aa2c48ec}</Project>
+      <Name>MVVMLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\Check.png" />
+    <Resource Include="Pictures\Error.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
