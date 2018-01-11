@@ -3,10 +3,12 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:VokabelTrainer"
+        xmlns:viewModels="clr-namespace:VokabelTrainer.ViewModels"
         mc:Ignorable="d"
         Title="Vocabtrainer" Height="350" Width="525" Loaded="Window_Loaded">
-    
+    <Window.DataContext>
+        <viewModels:MainViewModel/>
+    </Window.DataContext>
     <Grid Background="LightGray">
         <Grid.RowDefinitions>
             <RowDefinition Height="0.8*"/>
@@ -22,9 +24,9 @@
             <ColumnDefinition Width="242*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
 
-        <ListBox x:Name="listBoxCategories" HorizontalAlignment="Stretch" VerticalAlignment="Top" Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="3" Margin="0,0,34,0"/>
+        <ListBox x:Name="listBoxCategories" HorizontalAlignment="Stretch" VerticalAlignment="Top" Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="3" Margin="0,0,34,0" ItemsSource="{Binding Categories}" SelectedItem="{Binding SelectedCategory}" Height="208"/>
         <Menu x:Name="menu" HorizontalAlignment="Stretch"  VerticalAlignment="Top" Grid.Row="0" Grid.ColumnSpan="4" Margin="0,0,0.4,0">
-            <MenuItem Header="Menu">
+            <MenuItem Header="Menu" >
                 <MenuItem Header="Import Words"/>
                 <MenuItem Header="Create new category"/>
                 <MenuItem Header="Exit"/>
@@ -32,10 +34,10 @@
             </MenuItem>
         </Menu>
         <TextBox x:Name="textBoxSearch" FontStyle="Italic" MaxHeight="30" HorizontalAlignment="Stretch" Grid.Column="0" Background="White" Grid.Row="1" Text="Search..." VerticalAlignment="Top" VerticalContentAlignment="Top" Grid.ColumnSpan="3" Margin="0,0.4,34,0"/>
-        <DataGrid x:Name="dataGridCategory" Background="Azure" HorizontalAlignment="Stretch" VerticalAlignment="Top" Grid.Column="3" Grid.Row="1" Margin="0,0.4,0.4,0">
+        <DataGrid Background="Azure" HorizontalAlignment="Stretch" VerticalAlignment="Top" Grid.Column="3" Grid.Row="1" Margin="0,0.4,0.4,0" ItemsSource="{Binding Words}" AutoGenerateColumns="false" Height="262" Grid.RowSpan="3">
             <DataGrid.Columns>
-                <DataGridTextColumn  Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="English"/>
-                <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="German"/>
+                <DataGridTextColumn Header="English" Binding="{Binding Word_en}"/>
+                <DataGridTextColumn Header="German" Binding="{Binding Word_ge}"/>
             </DataGrid.Columns>
         </DataGrid>
         <Button x:Name="buttonStart" Content="Start Test" Background="WhiteSmoke" BorderThickness="2" BorderBrush="Black" HorizontalAlignment="Stretch"  Grid.Column="3" VerticalAlignment="Stretch" Grid.Row="4" Margin="0,0.4,0.4,-0.2"/>

@@ -17,5 +17,10 @@ namespace DB_lib.Entities
         public string CategoryName { get; set; }
 
         public virtual List<WordGroup> WordGroups { get; set; }
+
+        public override string ToString()
+        {
+            return CategoryName;
+        }
     }
 }

@@ -15,30 +15,6 @@ C:\Users\David A\Desktop\HTL Grieskirchen\5.Klasse\SYP\VokabelTrainer\VokabelTra
 C:\Users\David A\Desktop\HTL Grieskirchen\5.Klasse\SYP\VokabelTrainer\VokabelTrainer\VokabelTrainer\obj\Debug\VokabelTrainer.pdb
 C:\Users\David A\Desktop\HTL Grieskirchen\5.Klasse\SYP\VokabelTrainer\VokabelTrainer\VokabelTrainer\obj\Debug\Wordstrainer.g.cs
 C:\Users\David A\Desktop\HTL Grieskirchen\5.Klasse\SYP\VokabelTrainer\VokabelTrainer\VokabelTrainer\obj\Debug\Wordstrainer.baml
-C:\Users\lukhe\Documents\GitHub\VokabelTrainer\VokabelTrainer\VokabelTrainer\bin\Debug\VokabelTrainer.exe.config
-C:\Users\lukhe\Documents\GitHub\VokabelTrainer\VokabelTrainer\VokabelTrainer\bin\Debug\VokabelTrainer.exe
-C:\Users\lukhe\Documents\GitHub\VokabelTrainer\VokabelTrainer\VokabelTrainer\bin\Debug\VokabelTrainer.pdb
-C:\Users\lukhe\Documents\GitHub\VokabelTrainer\VokabelTrainer\VokabelTrainer\obj\Debug\VokabelTrainer.csprojResolveAssemblyReference.cache
-C:\Users\lukhe\Documents\GitHub\VokabelTrainer\VokabelTrainer\VokabelTrainer\obj\Debug\MainWindow.g.cs
-C:\Users\lukhe\Documents\GitHub\VokabelTrainer\VokabelTrainer\VokabelTrainer\obj\Debug\Wordstrainer.g.cs
-C:\Users\lukhe\Documents\GitHub\VokabelTrainer\VokabelTrainer\VokabelTrainer\obj\Debug\App.g.cs
-C:\Users\lukhe\Documents\GitHub\VokabelTrainer\VokabelTrainer\VokabelTrainer\obj\Debug\VokabelTrainer_MarkupCompile.cache
-C:\Users\lukhe\Documents\GitHub\VokabelTrainer\VokabelTrainer\VokabelTrainer\obj\Debug\VokabelTrainer_MarkupCompile.lref
-C:\Users\lukhe\Documents\GitHub\VokabelTrainer\VokabelTrainer\VokabelTrainer\obj\Debug\MainWindow.baml
-C:\Users\lukhe\Documents\GitHub\VokabelTrainer\VokabelTrainer\VokabelTrainer\obj\Debug\Wordstrainer.baml
-C:\Users\lukhe\Documents\GitHub\VokabelTrainer\VokabelTrainer\VokabelTrainer\obj\Debug\VokabelTrainer.g.resources
-C:\Users\lukhe\Documents\GitHub\VokabelTrainer\VokabelTrainer\VokabelTrainer\obj\Debug\VokabelTrainer.Properties.Resources.resources
-C:\Users\lukhe\Documents\GitHub\VokabelTrainer\VokabelTrainer\VokabelTrainer\obj\Debug\VokabelTrainer.csproj.GenerateResource.Cache
-C:\Users\lukhe\Documents\GitHub\VokabelTrainer\VokabelTrainer\VokabelTrainer\obj\Debug\VokabelTrainer.csproj.CoreCompileInputs.cache
-C:\Users\lukhe\Documents\GitHub\VokabelTrainer\VokabelTrainer\VokabelTrainer\obj\Debug\VokabelTrainer.exe
-C:\Users\lukhe\Documents\GitHub\VokabelTrainer\VokabelTrainer\VokabelTrainer\obj\Debug\VokabelTrainer.pdb
-C:\Users\lukhe\Documents\GitHub\VokabelTrainer\VokabelTrainer\VokabelTrainer\bin\Debug\DB_lib.dll
-C:\Users\lukhe\Documents\GitHub\VokabelTrainer\VokabelTrainer\VokabelTrainer\bin\Debug\EntityFramework.dll
-C:\Users\lukhe\Documents\GitHub\VokabelTrainer\VokabelTrainer\VokabelTrainer\bin\Debug\EntityFramework.SqlServer.dll
-C:\Users\lukhe\Documents\GitHub\VokabelTrainer\VokabelTrainer\VokabelTrainer\bin\Debug\DB_lib.pdb
-C:\Users\lukhe\Documents\GitHub\VokabelTrainer\VokabelTrainer\VokabelTrainer\bin\Debug\DB_lib.dll.config
-C:\Users\lukhe\Documents\GitHub\VokabelTrainer\VokabelTrainer\VokabelTrainer\bin\Debug\EntityFramework.xml
-C:\Users\lukhe\Documents\GitHub\VokabelTrainer\VokabelTrainer\VokabelTrainer\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\David A\Desktop\HTL Grieskirchen\5.Klasse\SYP\VokabelTrainer\VokabelTrainer\VokabelTrainer\bin\Debug\DB_lib.dll
 C:\Users\David A\Desktop\HTL Grieskirchen\5.Klasse\SYP\VokabelTrainer\VokabelTrainer\VokabelTrainer\bin\Debug\EntityFramework.dll
 C:\Users\David A\Desktop\HTL Grieskirchen\5.Klasse\SYP\VokabelTrainer\VokabelTrainer\VokabelTrainer\bin\Debug\EntityFramework.SqlServer.dll
@@ -48,3 +24,30 @@ C:\Users\David A\Desktop\HTL Grieskirchen\5.Klasse\SYP\VokabelTrainer\VokabelTra
 C:\Users\David A\Desktop\HTL Grieskirchen\5.Klasse\SYP\VokabelTrainer\VokabelTrainer\VokabelTrainer\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\David A\Desktop\HTL Grieskirchen\5.Klasse\SYP\VokabelTrainer\VokabelTrainer\VokabelTrainer\bin\Debug\MVVMLibrary.dll
 C:\Users\David A\Desktop\HTL Grieskirchen\5.Klasse\SYP\VokabelTrainer\VokabelTrainer\VokabelTrainer\bin\Debug\MVVMLibrary.pdb
+C:\Users\lukhe\Documents\GitHub\VokabelTrainer\VokabelTrainer\VokabelTrainer\obj\Debug\VokabelTrainer.csprojResolveAssemblyReference.cache
+C:\Users\lukhe\Documents\GitHub\VokabelTrainer\VokabelTrainer\VokabelTrainer\obj\Debug\Wordstrainer.g.cs
+C:\Users\lukhe\Documents\GitHub\VokabelTrainer\VokabelTrainer\VokabelTrainer\obj\Debug\App.g.cs
+C:\Users\lukhe\Documents\GitHub\VokabelTrainer\VokabelTrainer\VokabelTrainer\obj\Debug\VokabelTrainer_MarkupCompile.cache
+C:\Users\lukhe\Documents\GitHub\VokabelTrainer\VokabelTrainer\VokabelTrainer\obj\Debug\VokabelTrainer_MarkupCompile.lref
+C:\Users\lukhe\Documents\GitHub\VokabelTrainer\VokabelTrainer\VokabelTrainer\bin\Debug\VokabelTrainer.exe.config
+C:\Users\lukhe\Documents\GitHub\VokabelTrainer\VokabelTrainer\VokabelTrainer\bin\Debug\VokabelTrainer.exe
+C:\Users\lukhe\Documents\GitHub\VokabelTrainer\VokabelTrainer\VokabelTrainer\bin\Debug\VokabelTrainer.pdb
+C:\Users\lukhe\Documents\GitHub\VokabelTrainer\VokabelTrainer\VokabelTrainer\bin\Debug\DB_lib.dll
+C:\Users\lukhe\Documents\GitHub\VokabelTrainer\VokabelTrainer\VokabelTrainer\bin\Debug\EntityFramework.dll
+C:\Users\lukhe\Documents\GitHub\VokabelTrainer\VokabelTrainer\VokabelTrainer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\lukhe\Documents\GitHub\VokabelTrainer\VokabelTrainer\VokabelTrainer\bin\Debug\MVVMLibrary.dll
+C:\Users\lukhe\Documents\GitHub\VokabelTrainer\VokabelTrainer\VokabelTrainer\bin\Debug\DB_lib.pdb
+C:\Users\lukhe\Documents\GitHub\VokabelTrainer\VokabelTrainer\VokabelTrainer\bin\Debug\DB_lib.dll.config
+C:\Users\lukhe\Documents\GitHub\VokabelTrainer\VokabelTrainer\VokabelTrainer\bin\Debug\MVVMLibrary.pdb
+C:\Users\lukhe\Documents\GitHub\VokabelTrainer\VokabelTrainer\VokabelTrainer\bin\Debug\EntityFramework.xml
+C:\Users\lukhe\Documents\GitHub\VokabelTrainer\VokabelTrainer\VokabelTrainer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\lukhe\Documents\GitHub\VokabelTrainer\VokabelTrainer\VokabelTrainer\obj\Debug\MainWindow.g.cs
+C:\Users\lukhe\Documents\GitHub\VokabelTrainer\VokabelTrainer\VokabelTrainer\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\lukhe\Documents\GitHub\VokabelTrainer\VokabelTrainer\VokabelTrainer\obj\Debug\MainWindow.baml
+C:\Users\lukhe\Documents\GitHub\VokabelTrainer\VokabelTrainer\VokabelTrainer\obj\Debug\Wordstrainer.baml
+C:\Users\lukhe\Documents\GitHub\VokabelTrainer\VokabelTrainer\VokabelTrainer\obj\Debug\VokabelTrainer.g.resources
+C:\Users\lukhe\Documents\GitHub\VokabelTrainer\VokabelTrainer\VokabelTrainer\obj\Debug\VokabelTrainer.Properties.Resources.resources
+C:\Users\lukhe\Documents\GitHub\VokabelTrainer\VokabelTrainer\VokabelTrainer\obj\Debug\VokabelTrainer.csproj.GenerateResource.Cache
+C:\Users\lukhe\Documents\GitHub\VokabelTrainer\VokabelTrainer\VokabelTrainer\obj\Debug\VokabelTrainer.csproj.CoreCompileInputs.cache
+C:\Users\lukhe\Documents\GitHub\VokabelTrainer\VokabelTrainer\VokabelTrainer\obj\Debug\VokabelTrainer.exe
+C:\Users\lukhe\Documents\GitHub\VokabelTrainer\VokabelTrainer\VokabelTrainer\obj\Debug\VokabelTrainer.pdb

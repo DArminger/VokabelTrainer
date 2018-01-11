@@ -30,10 +30,7 @@ namespace VokabelTrainer
         private WordsContext words_db = new WordsContext();
 
 
-        public MainWindow()
-        {
-            InitializeComponent();
-        }
+        public MainWindow() => InitializeComponent();
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
@@ -41,13 +38,15 @@ namespace VokabelTrainer
             //var migration = new MigrateDatabaseToLatestVersion<WordsContext, Configuration>();
             //Database.SetInitializer(migration);
 
+            DataContext = new MainViewModel();
+
             //DB Test
-            //int test = words_db.Categories.Count();
-            //Console.WriteLine("DB Test: " + test);
-            Wordstrainer seas = new Wordstrainer(words_db.Categories.ToList()[2], true);
-            seas.Show();
+            int test = words_db.Categories.Count();
+            Console.WriteLine("DB Test: " + test);
+
         }
 
 
     }
 }
+
