@@ -102,8 +102,11 @@ namespace VokabelTrainer.ViewModels
         }
         private void DoShow(string obj)
         {
-            if (englishToGerman && wordCounter != category.WordGroups.Count) TranslatedWord = category.WordGroups[wordCounter].Word_ge;
-            else if (!englishToGerman && wordCounter != category.WordGroups.Count) TranslatedWord = category.WordGroups[wordCounter].Word_en;
+            if (englishToGerman && wordCounter < category.WordGroups.Count) TranslatedWord = category.WordGroups[wordCounter].Word_ge;
+            else if (!englishToGerman && wordCounter < category.WordGroups.Count) TranslatedWord = category.WordGroups[wordCounter].Word_en;
+            else if (englishToGerman && wordCounter >= category.WordGroups.Count && unusedWordCounter < unusedWords.Count) TranslatedWord = unusedWords[unusedWordCounter].Word_ge;
+            else if (!englishToGerman && wordCounter >= category.WordGroups.Count && unusedWordCounter < unusedWords.Count) TranslatedWord = unusedWords[unusedWordCounter].Word_en;
+
         }
         public ICommand Check
         {
@@ -161,6 +164,7 @@ namespace VokabelTrainer.ViewModels
         private void RefreshUIToNextWord(bool wordSkipped)
         {
             wordCounter++;
+            int uWDebug = wordCounter - 1;
             if (englishToGerman && wordCounter < category.WordGroups.Count)
             {
                 TranslationFromTo = "English - German";
@@ -171,7 +175,7 @@ namespace VokabelTrainer.ViewModels
                 TranslationFromTo = "German - English";
                 UntranslatedWord = category.WordGroups[wordCounter].Word_ge;
             }
-            if (wordSkipped && wordCounter < category.WordGroups.Count) unusedWords.Add(category.WordGroups[wordCounter--]);
+            if (wordSkipped && wordCounter < category.WordGroups.Count) unusedWords.Add(category.WordGroups[uWDebug]);
             if (unusedWords.Count != 0 && wordCounter >= category.WordGroups.Count)
             {
                 unusedWordCounter++;
@@ -180,7 +184,7 @@ namespace VokabelTrainer.ViewModels
                     TranslationFromTo = "English - German";
                     UntranslatedWord = unusedWords[unusedWordCounter].Word_en;
                 }
-                else if (!englishToGerman && unusedWordCounter < unusedWords.Count)
+                else if (!englishToGerman && unusedWordCounter <= unusedWords.Count)
                 {
                     TranslationFromTo = "German - English";
                     UntranslatedWord = unusedWords[unusedWordCounter].Word_ge;
