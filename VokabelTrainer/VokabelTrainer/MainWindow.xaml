@@ -40,7 +40,7 @@
                 <DataGridTextColumn Header="German" Binding="{Binding Word_ge}"/>
             </DataGrid.Columns>
         </DataGrid>
-        <Button x:Name="buttonStart" Content="Start Test" Background="WhiteSmoke" BorderThickness="2" BorderBrush="Black" HorizontalAlignment="Stretch"  Grid.Column="3" VerticalAlignment="Stretch" Grid.Row="4" Margin="0,0.4,0.4,-0.2"/>
+        <Button x:Name="buttonStart" Command="{Binding Start, Mode=OneWay}" Content="Start Test" Background="WhiteSmoke" BorderThickness="2" BorderBrush="Black" HorizontalAlignment="Stretch"  Grid.Column="3" VerticalAlignment="Stretch" Grid.Row="4" Margin="0,0.4,0.4,-0.2"/>
         <Label x:Name="label" FontWeight="Bold" Content="Categories:" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="3" Margin="0,0.2,34,0"/>
     </Grid>
 </Window>

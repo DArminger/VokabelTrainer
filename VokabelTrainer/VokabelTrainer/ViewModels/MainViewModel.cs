@@ -7,6 +7,7 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Input;
 using VokabelTrainer.ViewModels;
 
 namespace VokabelTrainer.ViewModels
@@ -60,10 +61,15 @@ namespace VokabelTrainer.ViewModels
                 RaisePropertyChangedEvent(nameof(SelectedCategory));
             }
         }
+        public ICommand Start
+        {
+            get { return new RelayCommand<string>(DoStart, x => true); }
+        }
 
-
-
-
-
+        private void DoStart(string obj)
+        {
+            Wordstrainer test = new Wordstrainer(SelectedCategory, true);
+            test.Show();
+        }
     }
 }

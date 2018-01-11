@@ -51,3 +51,4 @@ C:\Users\lukhe\Documents\GitHub\VokabelTrainer\VokabelTrainer\VokabelTrainer\obj
 C:\Users\lukhe\Documents\GitHub\VokabelTrainer\VokabelTrainer\VokabelTrainer\obj\Debug\VokabelTrainer.csproj.CoreCompileInputs.cache
 C:\Users\lukhe\Documents\GitHub\VokabelTrainer\VokabelTrainer\VokabelTrainer\obj\Debug\VokabelTrainer.exe
 C:\Users\lukhe\Documents\GitHub\VokabelTrainer\VokabelTrainer\VokabelTrainer\obj\Debug\VokabelTrainer.pdb
+C:\Users\David A\Desktop\HTL Grieskirchen\5.Klasse\SYP\VokabelTrainer\VokabelTrainer\VokabelTrainer\obj\Debug\GeneratedInternalTypeHelper.g.cs
