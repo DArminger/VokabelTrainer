@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 using System.Windows.Input;
 
 namespace VokabelTrainer.ViewModels
@@ -14,17 +15,29 @@ namespace VokabelTrainer.ViewModels
     {
         Category category;
         List<WordGroup> unusedWords;
-        int wordCounter = 0;
+        int unusedWordCounter = -1;
+        int wordCounter = -1;
         bool englishToGerman;
+        public RelayCommand<Window> Cancel { get; private set; }
 
         public TestViewModel(Category category, bool englishToGerman)
         {
             unusedWords = new List<WordGroup>();
             this.category = category;
             this.englishToGerman = englishToGerman;
+            this.Cancel = new RelayCommand<Window>(this.CloseWindow);
             RefreshUIToNextWord(false);
 
         }
+
+        private void CloseWindow(Window window)
+        {
+            if (window != null)
+            {
+                window.Close();
+            }
+        }
+
         private string translationFromTo;
 
         public string TranslationFromTo
@@ -60,7 +73,7 @@ namespace VokabelTrainer.ViewModels
                 RaisePropertyChangedEvent(nameof(TranslatedWord));
             }
         }
-        
+
         private string amountOfWord;
 
         public string AmountOfWord
@@ -98,20 +111,37 @@ namespace VokabelTrainer.ViewModels
         }
         private void DoCheck(string obj)
         {
-            if (englishToGerman && wordCounter != category.WordGroups.Count)
+            if (englishToGerman && wordCounter < category.WordGroups.Count)
             {
-                if (category.WordGroups[wordCounter].Word_ge.Equals(translatedWord)) { Image = Environment.CurrentDirectory + @"\Pictures\Check.png"; RefreshUIToNextWord(false); }
-                else { Image = Environment.CurrentDirectory + @"\Pictures\Error.png"; }
+                if (category.WordGroups[wordCounter].Word_ge.ToLower().Equals(translatedWord.ToLower())) SetImageAndRefreshUI(true);
+                else SetImageAndRefreshUI(false);
             }
-            else if (!englishToGerman && wordCounter != category.WordGroups.Count)
+            else if (!englishToGerman && wordCounter < category.WordGroups.Count)
             {
-                if (category.WordGroups[wordCounter].Word_en.Equals(translatedWord)) { Image = Environment.CurrentDirectory + @"\Pictures\Check.png"; RefreshUIToNextWord(false); }
-                else Image = Environment.CurrentDirectory + @"\Pictures\Error.png";
-                
+                if (category.WordGroups[wordCounter].Word_en.ToLower().Equals(translatedWord.ToLower())) SetImageAndRefreshUI(true);
+                else SetImageAndRefreshUI(false);
+            }
+            else if (englishToGerman && wordCounter >= category.WordGroups.Count && unusedWordCounter < unusedWords.Count)
+            {
+                if (unusedWords[unusedWordCounter].Word_ge.ToLower().Equals(translatedWord.ToLower())) SetImageAndRefreshUI(true);
+                else SetImageAndRefreshUI(false);
+            }
+            else if (!englishToGerman && wordCounter >= category.WordGroups.Count && unusedWordCounter < unusedWords.Count)
+            {
+                if (unusedWords[unusedWordCounter].Word_en.ToLower().Equals(translatedWord.ToLower())) SetImageAndRefreshUI(true);
+                else SetImageAndRefreshUI(false);
             }
         }
 
-        
+        private void SetImageAndRefreshUI(bool correct)
+        {
+            if (correct)
+            {
+                Image = Environment.CurrentDirectory + @"\Pictures\Check.png";
+                RefreshUIToNextWord(false);
+            }
+            else if (!correct) Image = Environment.CurrentDirectory + @"\Pictures\Error.png";
+        }
 
         private string image;
 
@@ -125,30 +155,39 @@ namespace VokabelTrainer.ViewModels
             }
         }
 
-        public ICommand Cancel
-        {
-            get { return new RelayCommand<string>(DoCancel, x => true); }
-        }
-        private void DoCancel(string obj)
-        {
-            
-        }
+
+
 
         private void RefreshUIToNextWord(bool wordSkipped)
         {
             wordCounter++;
-            if (englishToGerman && wordCounter != category.WordGroups.Count)
+            if (englishToGerman && wordCounter < category.WordGroups.Count)
             {
                 TranslationFromTo = "English - German";
                 UntranslatedWord = category.WordGroups[wordCounter].Word_en;
             }
-            else if (!englishToGerman && wordCounter != category.WordGroups.Count)
+            else if (!englishToGerman && wordCounter < category.WordGroups.Count)
             {
                 TranslationFromTo = "German - English";
                 UntranslatedWord = category.WordGroups[wordCounter].Word_ge;
             }
-            if (wordSkipped && wordCounter != category.WordGroups.Count) unusedWords.Add(category.WordGroups[wordCounter]);
+            if (wordSkipped && wordCounter < category.WordGroups.Count) unusedWords.Add(category.WordGroups[wordCounter--]);
+            if (unusedWords.Count != 0 && wordCounter >= category.WordGroups.Count)
+            {
+                unusedWordCounter++;
+                if (englishToGerman && unusedWordCounter < unusedWords.Count)
+                {
+                    TranslationFromTo = "English - German";
+                    UntranslatedWord = unusedWords[unusedWordCounter].Word_en;
+                }
+                else if (!englishToGerman && unusedWordCounter < unusedWords.Count)
+                {
+                    TranslationFromTo = "German - English";
+                    UntranslatedWord = unusedWords[unusedWordCounter].Word_ge;
+                }
+            }
             AmountOfWord = $"{wordCounter}/{category.WordGroups.Count}";
+            TranslatedWord = "";
         }
     }
 }
