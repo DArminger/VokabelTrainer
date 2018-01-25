@@ -35,8 +35,8 @@ namespace VokabelTrainer
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
 
-            var migration = new MigrateDatabaseToLatestVersion<WordsContext, Configuration>();
-            Database.SetInitializer(migration);
+            //var migration = new MigrateDatabaseToLatestVersion<WordsContext, Configuration>();
+            //Database.SetInitializer(migration);
 
             DataContext = new MainViewModel();
 
