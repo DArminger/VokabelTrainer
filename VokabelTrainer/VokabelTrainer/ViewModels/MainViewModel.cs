@@ -1,9 +1,12 @@
 ﻿using DB_lib;
 using DB_lib.Entities;
+using Microsoft.Win32;
 using MVVM.Tools;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,6 +17,7 @@ namespace VokabelTrainer.ViewModels
 {
     public class MainViewModel : ObservableObject
     {
+
         public MainViewModel()
         {
             Words = new ObservableCollection<WordGroup>();
@@ -70,6 +74,33 @@ namespace VokabelTrainer.ViewModels
         {
             Wordstrainer test = new Wordstrainer(SelectedCategory, true);
             test.Show();
+        }
+
+        public ICommand ExportCategory
+        {
+            get
+            {
+                return new RelayCommand<string>(DoExportCategory, x => selectedCategory != null);
+            }
+        }
+
+        private void DoExportCategory(string obj)
+        {
+            string json = JsonConvert.SerializeObject(selectedCategory, new JsonSerializerSettings()
+            {
+                PreserveReferencesHandling = PreserveReferencesHandling.Objects,
+                Formatting = Formatting.Indented
+            });
+            SaveFileDialog saveFileDialog = new SaveFileDialog();
+            saveFileDialog.Filter = "JSON file | *.json";
+            if (saveFileDialog.ShowDialog() == true)
+            {
+                using (StreamWriter sw = File.AppendText(saveFileDialog.FileName))
+                {
+                    sw.WriteLine(json);
+                }
+            }
+
         }
     }
 }

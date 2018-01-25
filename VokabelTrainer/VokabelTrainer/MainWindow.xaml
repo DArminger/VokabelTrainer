@@ -24,8 +24,11 @@
             <ColumnDefinition Width="242*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
 
-        <ListBox x:Name="listBoxCategories" HorizontalAlignment="Stretch" VerticalAlignment="Top" Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="3" Margin="0,0,34,0" ItemsSource="{Binding Categories}" SelectedItem="{Binding SelectedCategory}" Height="208"/>
-        <Menu x:Name="menu" HorizontalAlignment="Stretch"  VerticalAlignment="Top" Grid.Row="0" Grid.ColumnSpan="4" Margin="0,0,0.4,0">
+        <ListBox HorizontalAlignment="Stretch" VerticalAlignment="Top" Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="3" 
+                 Margin="0,0,34,0" ItemsSource="{Binding Categories}" SelectedItem="{Binding SelectedCategory}" Height="208" />
+
+
+        <Menu  HorizontalAlignment="Stretch"  VerticalAlignment="Top" Grid.Row="0" Grid.ColumnSpan="4" Margin="0,0,0.4,0">
             <MenuItem Header="Menu" >
                 <MenuItem Header="Import Words"/>
                 <MenuItem Header="Create new category"/>
@@ -33,14 +36,15 @@
 
             </MenuItem>
         </Menu>
-        <TextBox x:Name="textBoxSearch" FontStyle="Italic" MaxHeight="30" HorizontalAlignment="Stretch" Grid.Column="0" Background="White" Grid.Row="1" Text="Search..." VerticalAlignment="Top" VerticalContentAlignment="Top" Grid.ColumnSpan="3" Margin="0,0.4,34,0"/>
+        <TextBox  FontStyle="Italic" MaxHeight="30" HorizontalAlignment="Stretch" Grid.Column="0" Background="White" Grid.Row="1" Text="Search..." VerticalAlignment="Top" VerticalContentAlignment="Top" Grid.ColumnSpan="3" Margin="0,0.4,34,0"/>
         <DataGrid Background="Azure" HorizontalAlignment="Stretch" VerticalAlignment="Top" Grid.Column="3" Grid.Row="1" Margin="0,0.4,0.4,0" ItemsSource="{Binding Words}" AutoGenerateColumns="false" Height="262" Grid.RowSpan="3">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="English" Binding="{Binding Word_en}"/>
                 <DataGridTextColumn Header="German" Binding="{Binding Word_ge}"/>
             </DataGrid.Columns>
         </DataGrid>
-        <Button x:Name="buttonStart" Command="{Binding Start, Mode=OneWay}" Content="Start Test" Background="WhiteSmoke" BorderThickness="2" BorderBrush="Black" HorizontalAlignment="Stretch"  Grid.Column="3" VerticalAlignment="Stretch" Grid.Row="4" Margin="0,0.4,0.4,-0.2"/>
-        <Label x:Name="label" FontWeight="Bold" Content="Categories:" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="3" Margin="0,0.2,34,0"/>
+        <Button  Command="{Binding Start, Mode=OneWay}" Content="Start Test" Background="WhiteSmoke" BorderThickness="2" BorderBrush="Black" HorizontalAlignment="Stretch"  Grid.Column="3" VerticalAlignment="Stretch" Grid.Row="4" Margin="0,0.4,0.4,-0.2"/>
+        <Button  Command="{Binding ExportCategory, Mode=OneWay}" Content="Export selected category" Background="WhiteSmoke" BorderThickness="2" BorderBrush="Black" HorizontalAlignment="Stretch"  Grid.Column="1" VerticalAlignment="Stretch" Grid.Row="4" Margin="0,0.4,0.4,-0.2"/>
+        <Label  FontWeight="Bold" Content="Categories:" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="3" Margin="0,0.2,34,0"/>
     </Grid>
 </Window>

@@ -5,7 +5,6 @@ C:\Users\David A\Desktop\HTL Grieskirchen\5.Klasse\SYP\VokabelTrainer\VokabelTra
 C:\Users\David A\Desktop\HTL Grieskirchen\5.Klasse\SYP\VokabelTrainer\VokabelTrainer\DB_lib\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\David A\Desktop\HTL Grieskirchen\5.Klasse\SYP\VokabelTrainer\VokabelTrainer\DB_lib\bin\Debug\EntityFramework.xml
 C:\Users\David A\Desktop\HTL Grieskirchen\5.Klasse\SYP\VokabelTrainer\VokabelTrainer\DB_lib\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\David A\Desktop\HTL Grieskirchen\5.Klasse\SYP\VokabelTrainer\VokabelTrainer\DB_lib\obj\Debug\DB_lib.csprojResolveAssemblyReference.cache
 C:\Users\David A\Desktop\HTL Grieskirchen\5.Klasse\SYP\VokabelTrainer\VokabelTrainer\DB_lib\obj\Debug\DB_lib.Migrations.Initial.resources
 C:\Users\David A\Desktop\HTL Grieskirchen\5.Klasse\SYP\VokabelTrainer\VokabelTrainer\DB_lib\obj\Debug\DB_lib.csproj.GenerateResource.Cache
 C:\Users\David A\Desktop\HTL Grieskirchen\5.Klasse\SYP\VokabelTrainer\VokabelTrainer\DB_lib\obj\Debug\DB_lib.csproj.CoreCompileInputs.cache
