@@ -22,3 +22,4 @@ C:\Users\lukhe\Documents\GitHub\VokabelTrainer\VokabelTrainer\DB_lib\obj\Debug\D
 C:\Users\lukhe\Documents\GitHub\VokabelTrainer\VokabelTrainer\DB_lib\obj\Debug\DB_lib.csproj.CoreCompileInputs.cache
 C:\Users\lukhe\Documents\GitHub\VokabelTrainer\VokabelTrainer\DB_lib\obj\Debug\DB_lib.dll
 C:\Users\lukhe\Documents\GitHub\VokabelTrainer\VokabelTrainer\DB_lib\obj\Debug\DB_lib.pdb
+C:\Users\David A\Desktop\HTL Grieskirchen\5.Klasse\SYP\VokabelTrainer\VokabelTrainer\DB_lib\obj\Debug\DB_lib.csprojResolveAssemblyReference.cache
