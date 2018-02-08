@@ -21,10 +21,10 @@ namespace VokabelTrainer
     /// </summary>
     public partial class Wordstrainer : Window
     {
-        public Wordstrainer(Category category, bool englishToGerman)
+        public Wordstrainer(Category category, bool englishToGerman, int time)
         {
             InitializeComponent();
-            this.DataContext = new TestViewModel(category, englishToGerman);
+            this.DataContext = new TestViewModel(category, englishToGerman, time);
         }
     }
 }

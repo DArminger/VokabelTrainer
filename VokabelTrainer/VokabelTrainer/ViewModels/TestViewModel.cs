@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Input;
+using System.Windows.Threading;
 
 namespace VokabelTrainer.ViewModels
 {
@@ -17,17 +18,53 @@ namespace VokabelTrainer.ViewModels
         List<WordGroup> unusedWords;
         int unusedWordCounter = -1;
         int wordCounter = -1;
+        int time = -1;
         bool englishToGerman;
+        DispatcherTimer timer;
+
         public RelayCommand<Window> Cancel { get; private set; }
 
-        public TestViewModel(Category category, bool englishToGerman)
+        public TestViewModel(Category category, bool englishToGerman, int time)
         {
+            if (time != -1)
+            {
+                CurrentTime = 1;
+                this.time = time;
+                timer = new DispatcherTimer();
+                timer.Interval = new TimeSpan(0, 0, 1);
+                timer.Tick += new EventHandler(this.CountSeconds);
+                timer.Start();
+            }
             unusedWords = new List<WordGroup>();
             this.category = category;
             this.englishToGerman = englishToGerman;
             this.Cancel = new RelayCommand<Window>(this.CloseWindow);
             RefreshUIToNextWord(false);
 
+        }
+
+        private int currentTime;
+
+        public int CurrentTime
+        {
+            get { return currentTime; }
+            set
+            {
+                currentTime = value;
+                RaisePropertyChangedEvent(nameof(CurrentTime));
+            }
+        }
+
+
+        private void CountSeconds(object sender, EventArgs e)
+        {
+            CurrentTime++;
+            if(CurrentTime > time)
+            {
+                DoShow("");
+                CurrentTime = 1;
+                timer.Stop();
+            }
         }
 
         private void CloseWindow(Window window)
@@ -195,6 +232,7 @@ namespace VokabelTrainer.ViewModels
             }
             AmountOfWord = $"{wordCounter}/{category.WordGroups.Count}";
             TranslatedWord = "";
+            if (time != -1 && !timer.IsEnabled) timer.Start();
         }
     }
 }

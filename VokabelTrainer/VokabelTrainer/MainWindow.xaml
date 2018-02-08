@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:viewModels="clr-namespace:VokabelTrainer.ViewModels"
         mc:Ignorable="d"
-        Title="Vocabtrainer" Height="350" Width="525" Loaded="Window_Loaded">
+        Title="Vocabtrainer" Height="430" Width="525" Loaded="Window_Loaded">
     <Window.DataContext>
         <viewModels:MainViewModel/>
     </Window.DataContext>
@@ -16,6 +16,10 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="8*"/>
             <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="9*"></ColumnDefinition>
@@ -27,13 +31,11 @@
         <ListBox HorizontalAlignment="Stretch" VerticalAlignment="Top" Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="3" 
                  Margin="0,0,34,0" ItemsSource="{Binding Categories}" SelectedItem="{Binding SelectedCategory}" Height="208" />
 
-
         <Menu  HorizontalAlignment="Stretch"  VerticalAlignment="Top" Grid.Row="0" Grid.ColumnSpan="4" Margin="0,0,0.4,0">
             <MenuItem Header="Menu" >
                 <MenuItem Header="Import Words"/>
                 <MenuItem Header="Create new category"/>
                 <MenuItem Header="Exit"/>
-
             </MenuItem>
         </Menu>
         <TextBox  FontStyle="Italic" MaxHeight="30" HorizontalAlignment="Stretch" Grid.Column="0" Background="White" Grid.Row="1" Text="Search..." VerticalAlignment="Top" VerticalContentAlignment="Top" Grid.ColumnSpan="3" Margin="0,0.4,34,0"/>
@@ -43,8 +45,13 @@
                 <DataGridTextColumn Header="German" Binding="{Binding Word_ge}"/>
             </DataGrid.Columns>
         </DataGrid>
-        <Button  Command="{Binding Start, Mode=OneWay}" Content="Start Test" Background="WhiteSmoke" BorderThickness="2" BorderBrush="Black" HorizontalAlignment="Stretch"  Grid.Column="3" VerticalAlignment="Stretch" Grid.Row="4" Margin="0,0.4,0.4,-0.2"/>
-        <Button  Command="{Binding ExportCategory, Mode=OneWay}" Content="Export selected category" Background="WhiteSmoke" BorderThickness="2" BorderBrush="Black" HorizontalAlignment="Stretch"  Grid.Column="1" VerticalAlignment="Stretch" Grid.Row="4" Margin="0,0.4,0.4,-0.2"/>
+        <CheckBox Grid.Row="4" Grid.Column="1" Content="Timemode in seconds" VerticalAlignment="Center" IsChecked="{Binding UseTimemode}"></CheckBox>
+        <Slider IsEnabled="{Binding UseTimemode}" Grid.Row="5" Value="{Binding CurrentSliderValue}" Grid.Column="1" Minimum="{Binding SliderMin}" Maximum="{Binding SliderMax}"></Slider>
+        <Button  Command="{Binding Start, Mode=OneWay}" Content="Start Test" Background="WhiteSmoke" BorderThickness="2" BorderBrush="Black" HorizontalAlignment="Stretch"  Grid.Column="3" VerticalAlignment="Stretch" Grid.Row="7" Margin="0,0.4,0.4,-0.2"/>
+        <Button  Command="{Binding ExportCategory, Mode=OneWay}" Content="Export selected category" Background="WhiteSmoke" BorderThickness="2" BorderBrush="Black" HorizontalAlignment="Stretch"  Grid.Column="1" VerticalAlignment="Stretch" Grid.Row="7" Margin="0,0.4,0.4,-0.2"/>
         <Label  FontWeight="Bold" Content="Categories:" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="3" Margin="0,0.2,34,0"/>
+        <Label Content="{Binding SliderMax}" FontSize="10" Margin="203.2,0.4,0.6,0.2" Grid.Row="6" Grid.Column="1"/>
+        <Label Content="{Binding SliderMin}" FontSize="10" Margin="0.2,0.4,203.6,0.2" Grid.Row="6" Grid.Column="1"/>
+        <Label Content="{Binding CurrentSliderValue}" FontSize="10" Margin="101.2,1.4,102.6,20.8" Grid.Row="6" Grid.Column="1" Grid.RowSpan="2"/>
     </Grid>
 </Window>

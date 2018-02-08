@@ -21,6 +21,10 @@ namespace VokabelTrainer.ViewModels
         public MainViewModel()
         {
             Words = new ObservableCollection<WordGroup>();
+            SliderMin = 1;
+            SliderMax = 90;
+            CurrentSliderValue = 30;
+            UseTimemode = false;
         }
 
         private WordsContext words_db = new WordsContext();
@@ -65,6 +69,56 @@ namespace VokabelTrainer.ViewModels
                 RaisePropertyChangedEvent(nameof(SelectedCategory));
             }
         }
+
+        private bool? useTimemode;
+
+        public bool? UseTimemode
+        {
+            get { return useTimemode; }
+            set
+            {
+                useTimemode = value;
+                RaisePropertyChangedEvent(nameof(UseTimemode));
+            }
+        }
+
+
+        private int sliderMin;
+
+        public int SliderMin
+        {
+            get { return sliderMin; }
+            set
+            {
+                sliderMin = value;
+                RaisePropertyChangedEvent(nameof(SliderMin));
+            }
+        }
+
+        private int currentSliderValue;
+
+        public int CurrentSliderValue
+        {
+            get { return currentSliderValue; }
+            set
+            {
+                currentSliderValue = value;
+                RaisePropertyChangedEvent(nameof(CurrentSliderValue));
+            }
+        }
+
+
+        private int sliderMax;
+
+        public int SliderMax
+        {
+            get { return sliderMax; }
+            set
+            {
+                sliderMax = value;
+                RaisePropertyChangedEvent(nameof(SliderMax));
+            }
+        }
         public ICommand Start
         {
             get { return new RelayCommand<string>(DoStart, x => true); }
@@ -72,7 +126,9 @@ namespace VokabelTrainer.ViewModels
 
         private void DoStart(string obj)
         {
-            Wordstrainer test = new Wordstrainer(SelectedCategory, true);
+            Wordstrainer test = null;
+            if(UseTimemode == true) test = new Wordstrainer(SelectedCategory, true, CurrentSliderValue);
+            else if(UseTimemode == false) test = new Wordstrainer(SelectedCategory, true, -1);
             test.Show();
         }
 

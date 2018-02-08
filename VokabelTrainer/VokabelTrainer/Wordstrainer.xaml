@@ -26,6 +26,7 @@
         <Label Content="{Binding UntranslatedWord, UpdateSourceTrigger=PropertyChanged}"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Row="1" VerticalContentAlignment="Center" Grid.ColumnSpan="3"/>
         <Label Content="{Binding TranslationFromTo, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" VerticalContentAlignment="Center" Grid.ColumnSpan="3"/>
         <Label Content="{Binding AmountOfWord, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Right" VerticalAlignment="Stretch" Grid.Row="5" Grid.Column="2"/>
+        <Label Content="{Binding CurrentTime, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Right" VerticalAlignment="Stretch" Grid.Row="5" Grid.Column="1"/>
         <Button Command="{Binding Skip, Mode=OneWay}"  Content="Skip" Background="WhiteSmoke" BorderThickness="2" BorderBrush="Black" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Row="3" Grid.Column="0"/>
         <Button Command="{Binding Show, Mode=OneWay}" Content="Show" Background="WhiteSmoke" BorderThickness="2" BorderBrush="Black" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" Grid.Row="3" Grid.Column="1"/>
         <Button Command="{Binding Check, Mode=OneWay}" Content="Check" Background="WhiteSmoke" BorderThickness="2" BorderBrush="Black" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Row="3" Grid.Column="2"/>
