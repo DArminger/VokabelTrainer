@@ -45,6 +45,11 @@ namespace DB_lib.Migrations
                 WordGroup blue = new WordGroup { Word_en = "blue", Word_ge = "blau", Category = colors };
                 WordGroup black = new WordGroup { Word_en = "black", Word_ge = "schwarz", Category = colors };
 
+                WordGroup hatchback = new WordGroup { Word_en = "hatchback", Word_ge = "kompaktwagen", Category = cars };
+                WordGroup sedan = new WordGroup { Word_en = "sedan", Word_ge = "limousine", Category = cars };
+                WordGroup estate = new WordGroup { Word_en = "estate", Word_ge = "kombi", Category = cars };
+
+
                 context.Categories.AddOrUpdate(environment);
                 context.Categories.AddOrUpdate(cars);
                 context.Categories.AddOrUpdate(food);
@@ -67,6 +72,11 @@ namespace DB_lib.Migrations
                 context.WordGroups.AddOrUpdate(green);
                 context.WordGroups.AddOrUpdate(blue);
                 context.WordGroups.AddOrUpdate(black);
+
+                context.WordGroups.AddOrUpdate(hatchback);
+                context.WordGroups.AddOrUpdate(sedan);
+                context.WordGroups.AddOrUpdate(estate);
+
                 Console.WriteLine("Saving changes from migration");
                 context.SaveChanges();
             }
