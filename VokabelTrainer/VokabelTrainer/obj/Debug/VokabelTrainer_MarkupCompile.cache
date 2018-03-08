@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\David A\Desktop\HTL Grieskirchen\5.Klasse\SYP\VokabelTrainer\VokabelTrainer\VokabelTrainer\obj\Debug\
+C:\Users\lukhe\Source\Repos\VokabelTrainer\VokabelTrainer\VokabelTrainer\obj\Debug\
 VokabelTrainer
 none
 false
 DEBUG;TRACE
-C:\Users\David A\Desktop\HTL Grieskirchen\5.Klasse\SYP\VokabelTrainer\VokabelTrainer\VokabelTrainer\App.xaml
-2577971919
+C:\Users\lukhe\Source\Repos\VokabelTrainer\VokabelTrainer\VokabelTrainer\App.xaml
+4817059753
 
-8-1280240744
-251423358443
-MainWindow.xaml;Wordstrainer.xaml;
+101906251740
+251881301875
+AddWordDialog.xaml;CreateCategoryDialog.xaml;MainWindow.xaml;Wordstrainer.xaml;
 
 False
 

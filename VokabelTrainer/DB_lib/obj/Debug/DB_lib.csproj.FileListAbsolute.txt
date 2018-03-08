@@ -23,3 +23,16 @@ C:\Users\lukhe\Documents\GitHub\VokabelTrainer\VokabelTrainer\DB_lib\obj\Debug\D
 C:\Users\lukhe\Documents\GitHub\VokabelTrainer\VokabelTrainer\DB_lib\obj\Debug\DB_lib.dll
 C:\Users\lukhe\Documents\GitHub\VokabelTrainer\VokabelTrainer\DB_lib\obj\Debug\DB_lib.pdb
 C:\Users\David A\Desktop\HTL Grieskirchen\5.Klasse\SYP\VokabelTrainer\VokabelTrainer\DB_lib\obj\Debug\DB_lib.csprojResolveAssemblyReference.cache
+C:\Users\lukhe\Source\Repos\VokabelTrainer\VokabelTrainer\DB_lib\bin\Debug\DB_lib.dll.config
+C:\Users\lukhe\Source\Repos\VokabelTrainer\VokabelTrainer\DB_lib\bin\Debug\DB_lib.dll
+C:\Users\lukhe\Source\Repos\VokabelTrainer\VokabelTrainer\DB_lib\bin\Debug\DB_lib.pdb
+C:\Users\lukhe\Source\Repos\VokabelTrainer\VokabelTrainer\DB_lib\bin\Debug\EntityFramework.dll
+C:\Users\lukhe\Source\Repos\VokabelTrainer\VokabelTrainer\DB_lib\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\lukhe\Source\Repos\VokabelTrainer\VokabelTrainer\DB_lib\bin\Debug\EntityFramework.xml
+C:\Users\lukhe\Source\Repos\VokabelTrainer\VokabelTrainer\DB_lib\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\lukhe\Source\Repos\VokabelTrainer\VokabelTrainer\DB_lib\obj\Debug\DB_lib.Migrations.Initial.resources
+C:\Users\lukhe\Source\Repos\VokabelTrainer\VokabelTrainer\DB_lib\obj\Debug\DB_lib.csproj.GenerateResource.Cache
+C:\Users\lukhe\Source\Repos\VokabelTrainer\VokabelTrainer\DB_lib\obj\Debug\DB_lib.csproj.CoreCompileInputs.cache
+C:\Users\lukhe\Source\Repos\VokabelTrainer\VokabelTrainer\DB_lib\obj\Debug\DB_lib.dll
+C:\Users\lukhe\Source\Repos\VokabelTrainer\VokabelTrainer\DB_lib\obj\Debug\DB_lib.pdb
+C:\Users\lukhe\Source\Repos\VokabelTrainer\VokabelTrainer\DB_lib\obj\Debug\DB_lib.csprojResolveAssemblyReference.cache

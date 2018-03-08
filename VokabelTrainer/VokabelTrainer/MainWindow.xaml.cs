@@ -46,7 +46,10 @@ namespace VokabelTrainer
 
         }
 
-
+        private void ExitItem_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
     }
 }
 

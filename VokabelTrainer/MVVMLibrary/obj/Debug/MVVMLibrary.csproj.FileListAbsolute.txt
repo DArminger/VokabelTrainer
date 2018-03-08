@@ -9,3 +9,9 @@ C:\Users\lukhe\Documents\GitHub\VokabelTrainer\VokabelTrainer\MVVMLibrary\bin\De
 C:\Users\lukhe\Documents\GitHub\VokabelTrainer\VokabelTrainer\MVVMLibrary\obj\Debug\MVVMLibrary.csproj.CoreCompileInputs.cache
 C:\Users\lukhe\Documents\GitHub\VokabelTrainer\VokabelTrainer\MVVMLibrary\obj\Debug\MVVMLibrary.dll
 C:\Users\lukhe\Documents\GitHub\VokabelTrainer\VokabelTrainer\MVVMLibrary\obj\Debug\MVVMLibrary.pdb
+C:\Users\lukhe\Source\Repos\VokabelTrainer\VokabelTrainer\MVVMLibrary\bin\Debug\MVVMLibrary.dll
+C:\Users\lukhe\Source\Repos\VokabelTrainer\VokabelTrainer\MVVMLibrary\bin\Debug\MVVMLibrary.pdb
+C:\Users\lukhe\Source\Repos\VokabelTrainer\VokabelTrainer\MVVMLibrary\obj\Debug\MVVMLibrary.csprojResolveAssemblyReference.cache
+C:\Users\lukhe\Source\Repos\VokabelTrainer\VokabelTrainer\MVVMLibrary\obj\Debug\MVVMLibrary.csproj.CoreCompileInputs.cache
+C:\Users\lukhe\Source\Repos\VokabelTrainer\VokabelTrainer\MVVMLibrary\obj\Debug\MVVMLibrary.dll
+C:\Users\lukhe\Source\Repos\VokabelTrainer\VokabelTrainer\MVVMLibrary\obj\Debug\MVVMLibrary.pdb
