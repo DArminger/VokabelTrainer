@@ -154,7 +154,7 @@ namespace VokabelTrainer.ViewModels
         }
         public ICommand Start
         {
-            get { return new RelayCommand<string>(DoStart, x => true); }
+            get { return new RelayCommand<string>(DoStart, x => selectedCategory != null); }
         }
 
         private void DoStart(string obj)
@@ -272,7 +272,7 @@ namespace VokabelTrainer.ViewModels
         public ICommand AddWord {
             get
             {
-                return new RelayCommand<string>(DoAddWord, null);
+                return new RelayCommand<string>(DoAddWord, x => selectedCategory != null);
             }
         }
 
